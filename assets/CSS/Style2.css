@@ -1,9 +1,10 @@
 @charset "UTF-8";
 html {
   color:#fffacd;
-background:#48d1cc;
+background:#48D1CC;
 }
 h1{
+  text-align: center;
   background-color: rgb(200,100,100);, 0, 0);
 }
 
@@ -37,4 +38,40 @@ nav li a {
   color: #fff;
   font-weight: bold;
 
+}
+
+.btn-top-radius {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 37px;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #6182ca, 0px 2px 0px #4f6aa7, 0px 3px 0px #5470ad;
+}
+.btn-top-radius:active {
+  top: 4px;
+  text-shadow: none;
+}
+
+.btn-top-radius1 {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 37px;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #6182ca, 0px 2px 0px #4f6aa7, 0px 3px 0px #5470ad;
+}
+.btn-top-radius1:active {
+  top: 4px;
+  text-shadow: none;
+}
+
+.btn-top-radius2 {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 37px;
+  color:#FFFFFF;
+  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #6182ca, 0px 2px 0px #4f6aa7, 0px 3px 0px #5470ad;
+}
+.btn-top-radius2:active {
+  top: 4px;
+  text-shadow: none;
 }
