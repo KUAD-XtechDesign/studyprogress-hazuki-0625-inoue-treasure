@@ -14,11 +14,8 @@ h1{
   overflow: hidden;
 }
 
-nav {
+#nav {
   list-style: none;
-
-
-
 }
 
 nav li {
