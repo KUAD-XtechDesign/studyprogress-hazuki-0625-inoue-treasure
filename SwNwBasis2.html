@@ -48,7 +48,7 @@
     <br>　pinMode(2,INPUT);
     <br>　pinMode(7,INPUT);
     <br>　pinMode(13,OUTPUT);
-  }<br>
+  <br>}
   <br>
   <br>boid loop(){
     <br>　sensVal1=digitalRead(2);
@@ -63,12 +63,12 @@
            <br>　　　digitalWrite(13,HIGH);
            <br>　　　delay(800);
         <br> 　　}
-    <br>}else{
-      <br>if(sensVal2==1){
-        <br>digitalWrite(13,HIGH);
-        <br>delay(300);
-      <br> }
-      <br>digitalWrite(13,LOW);
+    <br>　}else{
+      <br>　　if(sensVal2==1){
+        <br>　　　digitalWrite(13,HIGH);
+        <br>　　　delay(300);
+      <br>　}
+      <br>　digitalWrite(13,LOW);
     <br>}
 <br> }
 
