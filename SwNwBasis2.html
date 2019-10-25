@@ -42,12 +42,43 @@
     <br>接触センサーが反応したら0,3秒間LEDが点灯
     <br>どっちものセンサーが反応したらLEDが点滅になるようにプログラミング
     <br><img src="./assets/images/19101617.16.1.jpg" alt="">
+    <br>int sensVal1=0;　　
+    <br>int sensVal2=0;
+    <br>void setup(){
+    <br> pinMode(2,INPUT);
+    <br> pinMode(7,INPUT);
+    <br> pinMode(13,OUTPUT);
+  }<br>
+  <br>
+  <br>boid loop(){
+    <br>sensVal1=digitalRead(2);
+    <br>sensVal2=digitalRead(7);
+    <br>if(sensVal==1){
+       <br>if(sensVal2==1){
+         <br>digitalWrite(13,HIGH);
+         <br>delay(200);
+         <br>digitalWrite(13,LOW);
+         <br>delay(100);
+         <br>}else{
+           <br>digitalWrite(13,HIGH);
+           <br>delay(800);
+        <br> }
+    <br>}else{
+      <br>if(sensVal2==1){
+        <br>digitalWrite(13,HIGH);
+        <br>delay(300);
+      <br> }
+      <br>digitalWrite(13,LOW);
+    <br>}
+<br> }
+
     <br>void setup()スケッチが実行された時に一度だけ実行される指令、void loop()は繰り返し実行される指令
     <br>pinMode(2,INPUT)とpinMode(7,INPUT)、数字はそれぞれの反応する場所、INPUTは入力
     <br>pinMode(13,OUTPUT)OUTPUTは出力
     <br>2、7に電流が流れると13に刺したセンサーが反応する
     <br>
     <br><img src="./assets/images/19101617.jpg" alt="">
+    <br>
 
   </p>
 </html>
