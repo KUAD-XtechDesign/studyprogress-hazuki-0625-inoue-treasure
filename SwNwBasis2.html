@@ -42,42 +42,36 @@
     <br>接触センサーが反応したら0,3秒間LEDが点灯
     <br>どっちものセンサーが反応したらLEDが点滅になるようにプログラミング
     <br><img src="./assets/images/19101617.16.1.jpg" alt="">
-    <br>int sensVal1=0;　　
-    <br>int sensVal2=0;
-    <br>void setup(){
-    <br>　pinMode(2,INPUT);
-    <br>　pinMode(7,INPUT);
-    <br>　pinMode(13,OUTPUT);
+    <br><img src="./assets/images/19101617.jpg" alt="">
+    <br>int sensVal1=0;　　　　　//変数をsensVal1という名で宣言
+    <br>int sensVal2=0;　　　　　//変数をsensVal2という名で宣言
+    <br>void setup(){　　　　　//スケッチが実行された時に一度だけ実行される指令
+    <br>　pinMode(2,INPUT);　　　　　//2に入力
+    <br>　pinMode(7,INPUT);　　　　　//7に入力
+    <br>　pinMode(13,OUTPUT);　　　　　//13に出力
   <br>}
   <br>
-  <br>boid loop(){
-    <br>　sensVal1=digitalRead(2);
-    <br>　sensVal2=digitalRead(7);
-    <br>　if(sensVal==1){
-       <br>　　if(sensVal2==1){
-         <br>　　　digitalWrite(13,HIGH);
-         <br>　　　delay(200);
-         <br>　　　digitalWrite(13,LOW);
-         <br>　　　delay(100);
-         <br>　　}else{
-           <br>　　　digitalWrite(13,HIGH);
-           <br>　　　delay(800);
+  <br>boid loop(){　　　　　//繰り返し実行される指令
+    <br>　sensVal1=digitalRead(2);　　　　　//sensVal1が入力ピン2
+    <br>　sensVal2=digitalRead(7);　　　　　//sensVal2が入力ピン7
+    <br>　if(sensVal1==1){　　　　　//もし入力ピン2が反応した場合
+       <br>　　if(sensVal2==1){　　　　　//入力ピン2と7が反応した場合
+         <br>　　　digitalWrite(13,HIGH);　　　　　//LEDが点灯する
+         <br>　　　delay(200);　　　　　//0.2秒間
+         <br>　　　digitalWrite(13,LOW);　　　　　//LEDが消灯する
+         <br>　　　delay(100);　　　　　//0,1秒間
+         <br>　　}else{　　　　　//じゃなければ
+           <br>　　　digitalWrite(13,HIGH);　　　　　//入力ピン2だけが反応した時
+           <br>　　　delay(800);　　　　　//0.8秒間
         <br> 　　}
     <br>　}else{
-      <br>　　if(sensVal2==1){
-        <br>　　　digitalWrite(13,HIGH);
-        <br>　　　delay(300);
+      <br>　　if(sensVal2==1){　　　　　//もし入力ピン7のみ反応した時
+        <br>　　　digitalWrite(13,HIGH);　　　　　//LEDは点灯する
+        <br>　　　delay(300);　　　　　//0.3秒間
       <br>　}
-      <br>　digitalWrite(13,LOW);
+      <br>　digitalWrite(13,LOW);　　　　　//どちらも反応しなかった場合LEDの変化なし
     <br>}
 <br> }
-
-    <br>void setup()スケッチが実行された時に一度だけ実行される指令、void loop()は繰り返し実行される指令
-    <br>pinMode(2,INPUT)とpinMode(7,INPUT)、数字はそれぞれの反応する場所、INPUTは入力
-    <br>pinMode(13,OUTPUT)OUTPUTは出力
-    <br>2、7に電流が流れると13に刺したセンサーが反応する
-    <br>
-    <br><img src="./assets/images/19101617.jpg" alt="">
     <br>
 
   </p>
