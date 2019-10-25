@@ -45,24 +45,24 @@
     <br>int sensVal1=0;　　
     <br>int sensVal2=0;
     <br>void setup(){
-    <br> pinMode(2,INPUT);
-    <br> pinMode(7,INPUT);
-    <br> pinMode(13,OUTPUT);
+    <br>　pinMode(2,INPUT);
+    <br>　pinMode(7,INPUT);
+    <br>　pinMode(13,OUTPUT);
   }<br>
   <br>
   <br>boid loop(){
-    <br>sensVal1=digitalRead(2);
-    <br>sensVal2=digitalRead(7);
-    <br>if(sensVal==1){
-       <br>if(sensVal2==1){
-         <br>digitalWrite(13,HIGH);
-         <br>delay(200);
-         <br>digitalWrite(13,LOW);
-         <br>delay(100);
-         <br>}else{
-           <br>digitalWrite(13,HIGH);
-           <br>delay(800);
-        <br> }
+    <br>　sensVal1=digitalRead(2);
+    <br>　sensVal2=digitalRead(7);
+    <br>　if(sensVal==1){
+       <br>　　if(sensVal2==1){
+         <br>　　　digitalWrite(13,HIGH);
+         <br>　　　delay(200);
+         <br>　　　digitalWrite(13,LOW);
+         <br>　　　delay(100);
+         <br>　　}else{
+           <br>　　　digitalWrite(13,HIGH);
+           <br>　　　delay(800);
+        <br> 　　}
     <br>}else{
       <br>if(sensVal2==1){
         <br>digitalWrite(13,HIGH);
