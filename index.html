@@ -4,6 +4,21 @@
     <meta charset="utf-8">
     <title>Hazuki_index</title>
     <link rel="stylesheet" href="./assets/css/Style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+$(function() {
+var menu = $('.menu');
+$('li', menu)
+.mouseover(function(e) {
+$('ul', this).stop().slideDown('fast');
+})
+.mouseout(function(e) {
+$('ul', this).stop().slideUp('fast');
+});
+});
+</script>
+
   </head>
 
   <body>
@@ -11,9 +26,55 @@
     <header>
       <nav>
         <ul>
-          <li><a href="./SwNwBasis1.html">SwNwBasis:1</a></li>
-          <li><a href="./SwNwBasis2.html">SwNwBasis:2</a></li>
-          <li><a href="./CV.html">CV</a></li>
+          <!-- ここがコンテンツバーです -->
+                <ul class="menu">
+
+                <li>
+                  <a href="index.html">ホーム</a>
+                </li>
+
+                <li>
+                  <a href="CV.html">自己紹介</a>
+                  <ul>
+                    <li><a href="page1-1.html">コンテンツ1-1</a></li>
+                    <li><a href="page1-2.html">コンテンツ1-2</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="SwNwBasis1.html">SwNwBasis1</a>
+                  <ul>
+                    <li><a href="page2-1.html">コンテンツ2-1</a></li>
+                    <li><a href="page2-2.html">コンテンツ2-2</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="SwNwBasis2.html">SwNwBasis2</a>
+                  <ul>
+                    <li><a href="page3-1.html">コンテンツ3-1</a></li>
+                    <li><a href="page3-2.html">arduino</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="xtdbasis3.html">xtdbasis3</a>
+                  <ul>
+                    <li><a href="page4-1.html">コンテンツ4-1</a></li>
+                    <li><a href="page4-2.html">コンテンツ4-2</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="page5.html">コンテンツ５</a>
+                  <ul>
+                    <li><a href="page5-1.html">コンテンツ5-1</a></li>
+                    <li><a href="page5-2.html">コンテンツ5-2</a></li>
+                  </ul>
+                </li>
+
+                </ul>
+
         </ul>
       </nav>
     <hr>
