@@ -50,3 +50,9 @@ h1{
   .menu li ul li a {
   	border-top: 1px solid #eeeeee;
   }
+
+  .nav li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 30px;
+  }
