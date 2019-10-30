@@ -8,71 +8,58 @@
     <body style="background-color:#708090;">
     <header>
     <nav>
+      <!-- ここがコンテンツバーです -->
+    <ul class="menu">
+
+    <li>
+      <a href="index.html">ホーム</a>
+    </li>
+
+    <li>
+      <a href="CV.html">自己紹介</a>
+    </li>
+
+    <li>
+      <a href="SwNwBasis1.html">SwNwBasis1</a>
+    </li>
+
+    <li>
+      <a href="SwNwBasis2.html">SwNwBasis2</a>
       <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./SwNwBasis1.html">SwNwBasis:1</a></li>
-        <li><a href="./CV.html">CV</a></li>
+        <li><a href="microbit.html">microbit</a></li>
+        <li><a href="arduino.html">arduino</a></li>
       </ul>
+    </li>
+
+    <li>
+      <a href="xtdbasis3.html">xtdbasis3</a>
+      <ul>
+        <li><a href="page4-1.html">コンテンツ4-1</a></li>
+        <li><a href="page4-2.html">コンテンツ4-2</a></li>
+      </ul>
+    </li>
+    </ul>
+  </nav>
+<hr>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+$(function() {
+var menu = $('.menu');
+$('li', menu)
+.mouseover(function(e) {
+$('ul', this).stop().slideDown('fast');
+})
+.mouseout(function(e) {
+$('ul', this).stop().slideUp('fast');
+});
+});
+</script>
     </nav>
   <hr>
 </header>
 
   </body>
-  <main>
-    <h1><fieldset style="background:#FFFFFF; padding:10px; border:none;"><center>ソフトウェアネットワーク演習ー後期ー</center></fieldest></h1>
-    <h2>micro:bit</h2>
-    <p>10/10(1日目)
-    <br>基本の中からブロックをドラックで持ってきて組み合わせる
-    <br>パズルみたいな感じで組み合わせて行く
-    <br>
-    <img src="./assets/images/191012.jpg" alt="">
-    <br>実際に組み合わせてみるとこんな感じ
-    <br>左側にどんな感じになるのか出てくるから分かりやすい
-    <br><img src="./assets/images/191010.jpg" alt="">
-    <br>サイコロを作ってみる
-    <br>
-    <br><img src="./assets/images/191015.jpg" alt="">
-    <br>　
-
-    <h3>Arduino Editor</h3>
-    10/11(2日目)
-    <br>
-    <br>ボタンセンサーと接触センサーを使ってプログラミング
-    <br>ボタンセンサーが反応したら0.8秒間LEDが点灯
-    <br>接触センサーが反応したら0,3秒間LEDが点灯
-    <br>どっちものセンサーが反応したらLEDが点滅になるようにプログラミング
-    <br><img src="./assets/images/19101617.16.1.jpg" alt="">
-    <br><img src="./assets/images/19101617.jpg" alt="">
-    <br>int sensVal1=0;　　　　　//変数をsensVal1という名で宣言
-    <br>int sensVal2=0;　　　　　//変数をsensVal2という名で宣言
-    <br>void setup(){　　　　　//スケッチが実行された時に一度だけ実行される指令
-    <br>　pinMode(2,INPUT);　　　　　//2に入力
-    <br>　pinMode(7,INPUT);　　　　　//7に入力
-    <br>　pinMode(13,OUTPUT);　　　　　//13に出力
-  <br>}
-  <br>
-  <br>boid loop(){　　　　　//繰り返し実行される指令
-    <br>　sensVal1=digitalRead(2);　　　　　//sensVal1が入力ピン2
-    <br>　sensVal2=digitalRead(7);　　　　　//sensVal2が入力ピン7
-    <br>　if(sensVal1==1){　　　　　//もし入力ピン2が反応した場合
-       <br>　　if(sensVal2==1){　　　　　//入力ピン2と7が反応した場合
-         <br>　　　digitalWrite(13,HIGH);　　　　　//LEDが点灯する
-         <br>　　　delay(200);　　　　　//0.2秒間
-         <br>　　　digitalWrite(13,LOW);　　　　　//LEDが消灯する
-         <br>　　　delay(100);　　　　　//0,1秒間
-         <br>　　}else{　　　　　//じゃなければ
-           <br>　　　digitalWrite(13,HIGH);　　　　　//入力ピン2だけが反応した時
-           <br>　　　delay(800);　　　　　//0.8秒間
-        <br> 　　}
-    <br>　}else{
-      <br>　　if(sensVal2==1){　　　　　//もし入力ピン7のみ反応した時
-        <br>　　　digitalWrite(13,HIGH);　　　　　//LEDは点灯する
-        <br>　　　delay(300);　　　　　//0.3秒間
-      <br>　}
-      <br>　digitalWrite(13,LOW);　　　　　//どちらも反応しなかった場合LEDの変化なし
-    <br>}
-<br> }
-    <br>
-
+  
   </p>
 </html>

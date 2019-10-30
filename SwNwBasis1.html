@@ -8,11 +8,53 @@
     <body style="background-color:#708090;">
     <header>
     <nav>
+      <!-- ここがコンテンツバーです -->
+    <ul class="menu">
+
+    <li>
+      <a href="index.html">ホーム</a>
+    </li>
+
+    <li>
+      <a href="CV.html">自己紹介</a>
+    </li>
+
+    <li>
+      <a href="SwNwBasis1.html">SwNwBasis1</a>
+    </li>
+
+    <li>
+      <a href="SwNwBasis2.html">SwNwBasis2</a>
       <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./SwNwBasis2.html">SwNwBasis:2</a></li>
-        <li><a href="./CV.html">CV</a></li>
+        <li><a href="microbit.html">microbit</a></li>
+        <li><a href="arduino.html">arduino</a></li>
       </ul>
+    </li>
+
+    <li>
+      <a href="xtdbasis3.html">xtdbasis3</a>
+      <ul>
+        <li><a href="page4-1.html">コンテンツ4-1</a></li>
+        <li><a href="page4-2.html">コンテンツ4-2</a></li>
+      </ul>
+    </li>
+    </ul>
+  </nav>
+<hr>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+$(function() {
+var menu = $('.menu');
+$('li', menu)
+.mouseover(function(e) {
+$('ul', this).stop().slideDown('fast');
+})
+.mouseout(function(e) {
+$('ul', this).stop().slideUp('fast');
+});
+});
+</script>
     </nav>
   <hr>
 </header>
