@@ -6,6 +6,7 @@
   	padding: 0;
   	overflow: hidden;
   	display: flex;
+    text-align: center;
   }
 
   .menu li {
@@ -17,7 +18,7 @@
   	height: 40px;
   	font-size: 15px;
   	color: #ffffff;
-  	background: #5F9EAO;
+  	background: #5F9EA0;
   	text-decoration: none;
   	border-right: 1px solid #eeeeee;
   	box-sizing: border-box;
