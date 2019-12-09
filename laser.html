@@ -3,6 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Hazuki_XtDBasis3</title>
+    <link rel="stylesheet" href="./assets/CSS/Style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+$(function() {
+var menu = $('.menu');
+$('li', menu)
+.mouseover(function(e) {
+$('ul', this).stop().slideDown('fast');
+})
+.mouseout(function(e) {
+$('ul', this).stop().slideUp('fast');
+});
+});
+</script>
   </head>
     <body style="background-color:#708090;">
     <header>
@@ -33,7 +48,8 @@
     <li>
       <a href="xtdbasis3.html">xtdbasis3</a>
       <ul>
-        <li><a href="spilog.html">スピログラフ</a></li>
+        <li><a href="spilog.html">機械機構</a></li>
+        <li><a href="mechanical.html">電子回路</a></li>
       </ul>
     </li>
     </ul>
